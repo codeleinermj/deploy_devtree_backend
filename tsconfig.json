@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist", //Es donde va a compilar este proyecto uan vez hagamos el dir de produccion, en nuestro caso tenemos lo tenemos en  el git ignore por lo tanto si lo subimos a git no subira esa carpeta
+        "rootDir": "./src",//Este es el archivo o la carpeta principal donde va a encontrar nuestro codigo
+        "lib": ["ESNext"], //Lib es la lista de biblioteca y caracteristicas de javascript que queremos que esten disponibles en el codigo de typeScript cuando usamos ESNext referimos a la version mas reciente de emmacscript  
+        "target": "esnext",//es el nivel de la version a al cual vamos a compilar nuestro codigo de typescript seria la mas nueva esnext
+        "moduleResolution": "nodenext", //Es para tener en Typescript una syntaxis muy similar a al de express
+        "module": "nodenext",//es como se compilaran los modulos una vez lo tengamos es como la syntaxis de arriba
+        "strict": true,// syntaxis stricta en typescript
+        "sourceMap": true,//es un archivo que nos va a permitir debbugear nuestra aplicacion una vez que la compilemos de typescript a javascript en produccion
+        "esModuleInterop": true ,//es para utilizar modulos de commonjs, y modulos de emmacscript
+        "declaration": true, //esto va a habilitar al generacion los los archivos que se les conoce como .d o .ts
+    },
+    "include": ["src/**/*.ts"]// es para seleccionar los archivos que quiero compilar (/** busca todas las carpetas)(/* busca todos los archivos).ts que tengan .ts
+}
