@@ -173,7 +173,7 @@ export const getUserByHandle = async (req: Request, res: Response) => {
 export const SearchByHandle = async (req: Request, res: Response) => {
     try {
 
-        const { handle } = req.params
+        const { handle } = req.body
 
         console.time("handleQuery")
 
